@@ -15,8 +15,8 @@ function ItemDetailCard({
   return (
     <div className="card m-1">
       <div className="row g-0">
-        <div className="col-md-1">
-          <img src={`../media/${img}`} className="img-fluid rounded-start" alt={nombre} />
+        <div className="col-md-2 d-flex align-items-center justify-content-center">
+          <img src={`../media/${img}`} className="img-fluid rounded-start h-100 w-100" alt={nombre} />
         </div>
         <div className="col-md-9">
           <div className="card-body">
@@ -26,10 +26,10 @@ function ItemDetailCard({
             <p className='text'>Stock: {stock}</p>
           </div>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-1 d-flex flex-column justify-content-center align-items-center">
           <p className="card-text text-center m-0 p-0 mb-2">${precio}</p>
           <div className='cardDetailActions'>
-            <div className="cantidad-container">
+            <div className="cantidad-container d-flex justify-content-center align-items-center">
               <button onClick={handleDecrease} className='btn btn-secondary btn-sm'>-</button>
               <span className="cantidad">{cantidad}</span>
               <button onClick={handleIncrease} className='btn btn-secondary btn-sm'>+</button>
