@@ -14,7 +14,7 @@ const Contacto = () => {
 
   return (
 
-    <div className="container text-center">
+    <div className="container">
       <h2>Contacto</h2>
       {!enviado ? (
         <form className="formulario" onSubmit={handleSubmit(enviar)}>
@@ -37,7 +37,7 @@ const Contacto = () => {
           <div className="mb-3 col-xl-4 col-md-4 col-sm-4">
             <div className="input-group">
               <span className="input-group-text">Mensaje</span>
-              <textarea className="form-control" aria-label="With textarea"></textarea>
+              <textarea className="form-control" aria-label="With textarea" {...register("mensaje")}></textarea>
             </div>
           </div>
           <div className="row">
@@ -50,10 +50,13 @@ const Contacto = () => {
         </form>
       ) : (
 
-        <div>
-          <h3>Gracias por contactarnos</h3>
-          <p>Recibimos tu mensaje correctamente!</p>
-          <p>Nos estaremos contactando en breve.</p>
+        <div className="container text-center">
+          <h3>Gracias por contactar con Peladingui Gunshop</h3>
+          <div className="card">
+            <div className="card-body">
+              Su consulta nos llegó correctamente, en breve estaremos le estaremos respondiendo!
+            </div>
+          </div>
         </div>
       )}
     </div>
