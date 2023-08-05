@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Lobster&family=Oswald:wght@200&family=Press+Start+2P&family=Special+Elite&display=swap");
+
+h1 {
+    font-family: Holtwood One SC;
+    font-size: xx-large;
+    padding-top: 10px;
+    color: #2A2B2E;
+    text-align: left;
+}
+
+.navbar {
+    background-color: #dad7cd;
+}
+
+.navbar a {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2A2B2E;
+}
+
+.navbar a:hover {
+    color: #DE3C4B;
+    text-decoration-line: underline;
+}
+
+.carroBtn {
+    background-color: #dad7cd;
+    border: none;
+
+}
+
+.nroCarro {
+    color: red;
+    font-size: initial;
+    align-self: flex-start;
+}
+
+.containerCarro {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #B6C270;
+}
+
+.saludo {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #972929;
+    text-decoration: none;
+}
+
+.agregarUno {
+    margin: 1rem;
+}
