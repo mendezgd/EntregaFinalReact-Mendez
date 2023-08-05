@@ -34,7 +34,7 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/requisitos">Requisitos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/donde">Donde estamos?</Link>
+                                <Link className="nav-link" to="/contacto">Contacto</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/carrito"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-cart" viewBox="0 0 16 16">

@@ -3,9 +3,9 @@ import React from 'react';
 const Requisitos = () => {
     return (
         <div>
-            <h2>Requisitos</h2>
             <div className="requi">
                 <div className="container text-center">
+                    <h2>Requisitos</h2>
                     <div className="row align-items-start">
                         <div className="col">
                             <div className="card1">

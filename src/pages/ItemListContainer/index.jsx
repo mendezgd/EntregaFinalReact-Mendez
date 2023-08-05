@@ -29,6 +29,7 @@ function ItemListContainer() {
   return (
     <>
       <div className="container text-center">
+        <h2>Catalogo</h2>
         <div className="row">
           {ProductosFiltrados.map((producto) => (
             <Cards key={producto.id} {...producto} />

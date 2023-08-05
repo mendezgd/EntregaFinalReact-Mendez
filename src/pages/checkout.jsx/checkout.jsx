@@ -42,6 +42,7 @@ const Checkout = () => {
     return (
         <div>
             <div className="container text-center">
+                <h2>Checkout</h2>
                 <form className="formulario" onSubmit={handleSubmit(comprar)}>
                     <div className="mb-3 col-xl-4 col-md-4 col-sm-4">
                         <label htmlFor="nombre" className="form-label">Nombre</label>
@@ -58,6 +59,10 @@ const Checkout = () => {
                     <div className="mb-3 col-xl-4 col-md-4 col-sm-4">
                         <label htmlFor="Telefono" className="form-label">Teléfono</label>
                         <input type="text" className="form-control" id="Telefono" placeholder="Ingrese su número de teléfono aquí" {...register("telefono")} />
+                    </div>
+                    <div className="mb-3 col-xl-4 col-md-4 col-sm-4">
+                        <label htmlFor="Telefono" className="form-label">Direccion de entrega</label>
+                        <input type="text" className="form-control" id="Telefono" placeholder="Ingrese su número de teléfono aquí" {...register("direccion")} />
                     </div>
                     <div className="row">
                         <div className="col-md-1">
