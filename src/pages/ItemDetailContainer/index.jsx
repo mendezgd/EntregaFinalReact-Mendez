@@ -3,22 +3,15 @@ import ItemDetailCard from '../../components/productos/ItemDetailCard/ItemDetail
 import { useFetch } from '../../components/Constantes/Hooks/useFetch';
 import { useContext, useState } from 'react';
 import { CartContext } from '../../contexto/CartContext';
-import { db } from '../../firebase/data';
-
 
 function ItemDetailContainer() {
   const { id } = useParams();
-
-  useEffect(() => {
-
-    const productosRef = collection(db, "productos");
-
-    getDocs(productosRef)
-      .then((resp) => {
-        console.log(resp)
-      })
-
-  }, [])
+  const { data: productos } = useFetch('/productos/productos.json', {
+    method: 'GET',
+    header: {
+      'Content-Type': 'application/json',
+    },
+  });
 
   const { carrito, agregarAlCarrito, vaciarCarrito } = useContext(CartContext);
   const [cantidad, setCantidad] = useState(1);

@@ -1,9 +1,10 @@
 import React from "react";
-
+import { useForm } from "react-hook-form";
 import { CartContext } from "../../contexto/CartContext";
 
 const Checkout = () => {
 
+    const { register, handleSubmit } = useForm();
 
     return (
         <div>
